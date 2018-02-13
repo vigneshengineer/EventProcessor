@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.stream.log.engine.AlertLoggerEngineTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-02-12T04:43:10" hostname="LAPTOP-NB1HO6TB" time="0.319">
+  <properties/>
+  <testcase name="test" classname="com.stream.log.engine.AlertLoggerEngineTest" time="0.319"/>
+  <system-out><![CDATA[23:42:50.737 INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+23:42:50.772 INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4c7c25e8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@70e067c8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3cf44483, org.springframework.test.context.transaction.TransactionalTestExecutionListener@34b6640c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@19c84417]
+23:42:50.874 INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [application-context.xml]
+23:42:51.188 INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@10a1d76d: startup date [Sun Feb 11 23:42:51 EST 2018]; root of context hierarchy
+23:43:05.641 INFO  h.d.H.ENGINE - checkpointClose start
+23:43:05.642 INFO  h.d.H.ENGINE - checkpointClose synched
+23:43:10.107 INFO  h.d.H.ENGINE - checkpointClose script done
+23:43:10.268 INFO  h.d.H.ENGINE - checkpointClose end
+test
+23:43:10.646 INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5affe0bf: startup date [Sun Feb 11 23:43:10 EST 2018]; root of context hierarchy
+23:43:10.647 INFO  o.s.b.f.x.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [application-context.xml]
+23:43:10.901 INFO  c.s.l.u.LogStreamUtil - ===========Total Event counts================= :: 5
+23:43:10.903 INFO  c.s.l.u.LogStreamUtil - ===========Total Invalid counts================= :: 0
+23:43:10.903 INFO  c.s.l.u.LogStreamUtil - ===========Orphan Event counts================= :: 1 [absddddef2]
+23:43:10.904 INFO  c.s.l.u.LogStreamUtil - ===========Inserted Event counts================= :: 2
+23:43:10.904 INFO  c.s.l.u.LogStreamUtil - Time taken for execution :: 261 ms
+23:43:10.904 INFO  c.s.l.u.LogStreamUtil - ===========exit=================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

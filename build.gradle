@@ -1,0 +1,40 @@
+group 'com.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+mainClassName = 'com.stream.log.engine.AlertLoggerEngine'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
+
+dependencies {
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.7'
+    compile group: 'org.hsqldb', name: 'hsqldb', version:'2.4.0'
+    compile("org.springframework:spring-context:4.3.14.RELEASE")
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.14.RELEASE'
+    compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+    compile('com.github.mowedgrass:jasypt-gradle-boot-plugin:0.1.32')
+    compile("org.jasypt:jasypt-spring3:1.9.1")
+    compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.13'
+    compile group: 'org.aspectj', name: 'aspectjrt', version: '1.8.13'
+    testCompile("org.springframework:spring-test:4.3.14.RELEASE")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+run {
+    if (project.hasProperty("appArgs")) {
+        args Eval.me(appArgs)
+    }
+}
